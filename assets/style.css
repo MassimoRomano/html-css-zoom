@@ -189,6 +189,7 @@ img {
     flex-direction: row;
     align-items: start;
     color: white;
+    justify-content: center;
 }
 
 a {
@@ -198,7 +199,10 @@ a {
 }
 
 .video {
-    align-self: center;
+    display: grid;
+    grid-template: repeat(2, 30px)/repeat(8, 70px);
+    justify-content: center;
+    text-align: center;
 }
 
 span {
