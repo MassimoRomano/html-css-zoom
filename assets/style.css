@@ -8,49 +8,54 @@
 
 
 .container{
-    width: 98%;
+    width: 95%;
     max-width: 1500px;
     height: 100vh;
-    max-height: 1920px;
-    padding: 50px 0px;
     margin: 0 auto;
+    align-content: baseline;
 }
 
 .d-flex{
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
-    
+    gap:2px; 
+    margin-left: 2%;
+    margin-right: 2%;
+
 }
 
 .space-between{
     justify-content: space-between;
+   
 }
 
 .align-center{
     align-items: center;
 }
 
-.cal-7{
-    width: calc(100%/12*10.5);
+.cal-7 > div{
+    width: calc(100%/7 - 2px);
 }
 
-.main{
-    overflow: hidden;
-    
+#site_header{
+    background-color: aliceblue;
+    height: 3vh;
 }
-   
+
+
 #site_main{
     background-color: black;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
-
 }
 
 img{
-    height: 120px;
+    
     width: auto;
 }
 
-
+#site_footer{
+    background-color: aquamarine;
+    height: 5vh;
+}
     
