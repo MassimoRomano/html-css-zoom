@@ -2,60 +2,115 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     border: 0;
+    box-sizing: border-box;
 }
-
 
 .container{
     width: 95%;
     max-width: 1500px;
+    margin: auto auto;
+
+}
+
+.d-grid{
+    display: grid;
+    grid-template: repeat(4, 1fr)/repeat(7,1fr);
+    gap: 7px 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     height: 100vh;
-    margin: 0 auto;
-    align-content: baseline;
 }
 
 .d-flex{
     display: flex;
-    flex-wrap: wrap;
-    gap:2px; 
-    margin-left: 2%;
-    margin-right: 2%;
-
-}
-
-.space-between{
+    flex-direction: row;
     justify-content: space-between;
-   
-}
-
-.align-center{
     align-items: center;
+    justify-items: center;
+
 }
 
-.cal-7 > div{
-    width: calc(100%/7 - 2px);
+.align_center{
+    justify-content: center;
 }
 
 #site_header{
-    background-color: aliceblue;
-    height: 3vh;
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+    overflow: hidden;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+.position{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.top_left{
+    position: absolute;
+    left: 90%;
+    background-color: rgb(75, 75, 75);
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin: 10px 2px;
+    font-size: 10px;
+    
+}
+
+.top_left :hover{
+    position: absolute;
+    background-color: rgb(75, 75, 75);
+    padding: 5.5px 20px;
+    border-radius: 5px;
+    
+}
+
+.top_right{
+    position: absolute;
+    padding: 1px 5px;
+    margin: 10px 2px;
+    border-radius: 5px;
+    background-color: rgb(75, 75, 75);
+    left: 95%;
+    
+    
+}
 
 #site_main{
     background-color: black;
-    height: 90vh;
-    width: 100vw;
-}
+    height: 100vh;
+ }
+
+
 
 img{
-    
-    width: auto;
+    width: 100%;
 }
 
 #site_footer{
-    background-color: aquamarine;
-    height: 5vh;
+    background-color: rgb(58, 57, 57);
+    height: auto;
+    padding: 1%;
 }
-    
+
+.space{
+    display: flex;
+}
+a{
+    margin-top: 5px;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+.finish{
+    background-color: rgb(114, 114, 114);
+    color: red;
+
+    padding: 10px 10px;
+}
